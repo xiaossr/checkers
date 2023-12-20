@@ -247,14 +247,14 @@ int main()
         window.draw(sboard);
         if(isMove) {
             m[moveidx].setPosition(Vector2f(pos) - delt);
-            vector<int> posnext = possibleNextMoves(spriteCor[moveidx]);
-            for(auto p : posnext) {
-                CircleShape circ(radius);
-                circ.setFillColor(sf::Color(100, 250, 50));
-                circ.setPosition(gridPos[p]);
+            // vector<int> posnext = possibleNextMoves(spriteCor[moveidx]);
+            // for(auto p : posnext) {
+            //     CircleShape circ(radius);
+            //     circ.setFillColor(sf::Color(100, 250, 50));
+            //     circ.setPosition(gridPos[p]);
 
-                window.draw(circ);
-            }
+            //     window.draw(circ);
+            // }
         }
 
         for(int i = 0; i < 20; i++) 
